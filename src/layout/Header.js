@@ -7,13 +7,19 @@ import { Link } from "react-router-dom";
 const Header = (props) => {
     const [toggle, SetToggle] = useState(false)
 
-    console.log(props.black.length);
+    window.addEventListener('scroll', () => {
+        if(window.scrollY > 550 ) {
+           document.getElementById('header').classList.add('sticky')
+        } else{
+            document.getElementById('header').classList.remove('sticky')
+        }
+    })
 
     return (
         <>
-            <div className='container '>
-                <header >
-                    <nav>
+          
+                <header id="header" >
+                    <nav className="container">
                         <div className="logo">
                             <h4 className="mb-0" style={{ color: props.black.length > 0 ? 'black' : '#ffff' }}>Epson</h4>
                         </div>
@@ -34,7 +40,6 @@ const Header = (props) => {
                         </div>
                     </nav>
                 </header>
-            </div>
         </>
     )
 }

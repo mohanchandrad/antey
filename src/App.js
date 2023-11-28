@@ -5,6 +5,8 @@ import Footer from "./layout/Footer";
 import { Route, Routes } from "react-router-dom";
 import { Home } from "./pages/Home";
 import { Contact } from "./pages/Contact";
+import { Services } from "./pages/Service";
+import { Blog } from "./pages/Blog";
 
 
 function App() {
@@ -13,6 +15,8 @@ function App() {
       {/* <Header /> */}
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/blog" element={<Blog />} />
+        <Route path="/service" element={<Services />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
       {/* <Footer /> */}
@@ -21,7 +25,3 @@ function App() {
 }
 
 export default App;
-
-// git remote add origin https://github.com/mohanchandrad/avast_anteyVairus.git
-//   git branch -M main
-//   git push -u origin main

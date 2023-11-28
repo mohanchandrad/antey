@@ -6,7 +6,6 @@ import { About } from "../layout/About";
 import Footer from "../layout/Footer";
 import { AboutContent } from "../component/AboutContent";
 import { Service } from "../layout/Service";
-import { Contact } from "../layout/Contact";
 
 export const Home = () => {
 
@@ -26,7 +25,6 @@ export const Home = () => {
                     <AboutContent />
                 </div>
                 <Service />
-                {/* <Contact /> */}
                 <Footer />
             </div>
 

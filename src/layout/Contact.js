@@ -4,8 +4,8 @@ import { FaInstagram } from "react-icons/fa";
 import { FaFacebookF } from "react-icons/fa";
 import { IoLogoTwitter } from "react-icons/io";
 import { FaLinkedinIn } from "react-icons/fa";
-import { FaPhoneAlt } from "react-icons/fa";
-import { IoMail } from "react-icons/io5";
+// import { FaPhoneAlt } from "react-icons/fa";
+// import { IoMail } from "react-icons/io5";
 
 export const ContactBody = () => {
 
@@ -35,30 +35,30 @@ export const ContactBody = () => {
                             <div className="foolw"> <a href=""> < FaLinkedinIn /> LinkedinIn</a> </div>
                         </div>
 
-                        <div className="con_col">
+                        {/* <div className="con_col">
                             <div className="foolw"> <a href="tel:9087654321"> < FaPhoneAlt /> Contact</a> </div>
                         </div>
 
                         <div className="con_col">
                             <div className="foolw"> <a href="mailto:demo@gmail.com"> < IoMail /> Send Mail</a> </div>
-                        </div>
+                        </div> */}
                     </div>
 
                     <form style={{ display: 'block', width: '70%' }}>
                         <h3>Get The Contact</h3>
                         <div className="form_row d-flex" style={{ rowGap: '10px' }}>
                             <div className="form_row_col">
-                                <input type="text" className="" placeholder="Enter Name" />
+                                <input type="text" className="" placeholder="Enter Name..." />
                             </div>
 
                             <div className="form_row_col">
-                                <input type="text" className="" placeholder="Enter Name" />
+                                <input type="text" className="" placeholder="Email Id..." />
 
                             </div>
                         </div>
-                        <input type="text" className="" placeholder="Enter Name" />
-                        <textarea></textarea>
-                        <button>Sed The Message</button>
+                        <input type="text" className="" placeholder="Subject" />
+                        <textarea placeholder="Message..."></textarea>
+                        <button type="button">Sed The Message</button>
                     </form>
                 </div>
             </div>

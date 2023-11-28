@@ -6,7 +6,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Poppins', sans-serif;
   scroll-behavior: smooth;
 }
 
@@ -28,10 +28,8 @@ p {
 
 .container {
   max-width: 1200px;
-  height: auto;
   margin: 0px auto;
 }
-
 
 
 header {
@@ -39,6 +37,16 @@ header {
   margin: 0px auto;
   height: 75px;
   background-color: transparent !important;
+  transition: 300ms ease-in-out;
+}
+
+
+.sticky {
+  width: 100%;
+  position: fixed !important;
+  top: 0;
+  background-color: #525252d6 !important;
+  z-index: 9999;
 }
 
 header>nav {
@@ -100,9 +108,10 @@ header>nav>.nav-link>ul>li>a:hover:after {
   height: 100vh;
   width: 100%;
   margin: 0px auto;
-  background-image: url('https://img.freepik.com/free-vector/abstract-secure-technology-wallpaper_52683-28465.jpg?w=740&t=st=1701066798~exp=1701067398~hmac=53749e80372928c261d5a80730d37001b3ea14b71b1942846af58f7ad95b27fa');
+  background-image: url('https://img.freepik.com/free-photo/html-system-website-concept_23-2150376744.jpg?size=626&ext=jpg&uid=P125233532&ga=GA1.1.1326273119.1694753008&semt=ais');
   background-repeat: no-repeat;
   background-position: center;
+  background-attachment: fixed;
   background-size: cover;
   position: relative;
   z-index: 1;
@@ -115,7 +124,7 @@ header>nav>.nav-link>ul>li>a:hover:after {
   position: absolute;
   top: 0;
   left: 0;
-  background-color: #0000004d;
+  /* background-color: #0000004d; */
   z-index: -1;
 }
 
@@ -264,7 +273,7 @@ header>nav>.nav-link>ul>li>a:hover:after {
 /* ================>=================> cards ----------------->> ------------------------>>  */
 
 .cart {
-  width: 315px;
+  width: 330px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   border-radius: 0px 0px 8px 8px;
   padding-bottom: 20px;
@@ -388,7 +397,7 @@ footer .f-row .f-col .f-add li a svg {
 }
 
 
-/* ----------------- service page start ==---------------  */
+/* ----------------- inner Banner start ==---------------  */
 
 .innerBenar {
   width: 100%;
@@ -411,6 +420,207 @@ footer .f-row .f-col .f-add li a svg {
   font-family: 'Poppins', sans-serif;
 }
 
+/* ------------- Service page start -----------  */
+/* ------------- Service page start -----------  */
+
+.serviceCart {
+  width: 515px;
+  box-shadow: 0px 0px 4px 0px #9f9696;
+  border-radius: 0px 0px 10px 10px;
+}
+
+.serviceCart:hover {
+  box-shadow: 0px 0px 7px 0px #373636;
+  transition: 300ms ease-in-out;
+}
+
+.cart_image {
+  width: 100%;
+  height: 240px;
+  overflow: hidden;
+}
+
+.serviceCart .cart_image img {
+  width: 100%;
+  transition: 300ms ease-in-out;
+}
+
+.serviceCart:hover .cart_image img {
+  transform: scale(1.1);
+}
+
+.serviceCart .cartDetails {
+  position: relative;
+  padding: 10px 15px;
+  width: 100%;
+  margin: 0px auto;
+  border-radius: 10px;
+}
+
+.serviceCart .cartDetails h3 {
+  color: #0c0c0c;
+  font-size: 24px;
+  margin-bottom: 9px;
+  font-weight: 500;
+  border-bottom: 1px solid #9e9e9e;
+  padding-bottom: 12px;
+}
+
+.serviceCart .cartDetails p {
+  font-size: 15px;
+  word-spacing: 4px;
+  line-height: 1.5;
+}
+
+/* ---------> ---------> faq -----------> -------->  */
+.faq {
+  background-color: #202e492b;
+  padding: 10px 0px 50px;
+}
+
+.faq .faq_qus {
+  width: 80%;
+  margin: 30px auto;
+  background-color: #fff;
+  padding: 10px 20px;
+}
+
+.faq .faq_qus h3 {
+  background-color: #fff;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #e3e3e3;
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #404040;
+}
+
+.faq .faq_qus p {
+  font-size: 15px;
+  font-weight: 500;
+  color: #494949;
+}
+
+
+/* --------------- >> --------- Blog page ---------- >> ---------  */
+
+.blogSlide {
+  position: relative;
+  margin-top: 130px;
+}
+
+.slide {
+  position: relative;
+}
+
+.slide .slede_con {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  padding: 15px;
+}
+
+.slide .slede_con h3 {
+  color: #ffff;
+  font-size: 23px;
+  border-bottom: 1px solid #c6c6c6;
+  margin-bottom: 4px;
+  padding-bottom: 5px;
+}
+
+.slide .slede_con p {
+  color: #fff;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+
+.blog .blog_row {
+  display: grid;
+  grid-template-columns: 57% 40%;
+  justify-content: space-between;
+  margin-top: 120px;
+  margin-bottom: 40px;
+  align-items: flex-start;
+}
+
+.blog_col {
+  box-shadow: 0px 0px 8px 2px #d7d6d6;
+  padding: 20px;
+}
+
+.blog_view .blog_view_col img {
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+}
+
+.blog_view .blog_view_col h3 {
+  font-size: 25px;
+  color: var(--section_title_color);
+  margin: 10px 0px;
+  border-bottom: 1px solid #cdcdcd;
+  padding-bottom: 10px;
+  font-weight: 500;
+}
+
+.blog_view .blog_view_col p {
+  margin-top: 10px;
+  font-weight: 500;
+  font-size: 14px;
+  color: #464646;
+  text-align: justify;
+}
+
+
+.blog_view .blog_view_col span {
+  display: block;
+  margin-top: 10px;
+  font-weight: 500;
+  font-size: 14px;
+  color: #909090;
+}
+
+.blog_table {
+  display: grid;
+  grid-template-columns: 30% 66%;
+  justify-content: space-between;
+  border-bottom: 1px solid gainsboro;
+  padding-bottom: 10px;
+  margin-bottom: 15px;
+}
+
+table tbody tr .table_con {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 10px;
+}
+
+.blog_table h4 {
+  font-size: 18px;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+  gap: 10px;
+  color: #383838;
+}
+
+.blog_table span {
+  font-size: 14px;
+}
+
+.blog_table button {
+  background-color: transparent;
+  border: none;
+  font-size: 15px;
+  color: var(--inner-color);
+  font-family: 'Poppins', sans-serif;
+  cursor: pointer;
+}
 
 /* contact page start ==============  */
 form {
@@ -418,9 +628,13 @@ form {
 }
 
 form h3 {
-  text-align: center;
-  margin-bottom: 51px;
+  color: var(--section_title_color);
+  margin-top: 126px;
+  margin-bottom: 25px;
   font-size: 30px;
+  border-bottom: 1px solid #d5d5d5;
+  padding-bottom: 18px;
+  text-shadow: 0px 2px 0px #ff57229c;
 }
 
 .contact_ .con_row {
@@ -457,8 +671,8 @@ input {
 
 textarea {
   width: 100%;
-  height: 40px;
-  padding: 0px 10px;
+  height: 85px;
+  padding: 10px 10px;
   border-radius: 5px;
   border: 1px solid lightgrey;
   box-shadow: 0px 0px 3px 0px #afafaf;
@@ -472,4 +686,145 @@ form button {
   border: none;
   font-size: 15px;
   border-radius: 0px 20px;
+  transition: 250ms ease-in-out;
+  border: 1px solid var(--inner-color);
+}
+
+form button:hover {
+  background-color: transparent;
+  color: var(--inner-color);
+  border: 1px solid var(--inner-color);
+}
+
+
+
+@media screen and (max-width: 1250px) {
+  .container {
+    padding: 0px 20px;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .serviceCart {
+    width: 466px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  p {
+    font-size: 15px;
+  }
+
+  .section_title p {
+    width: 70%;
+  }
+
+  .serviceCart {
+    width: 79%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .service_row {
+    flex-wrap: wrap;
+  }
+
+  .cart {
+    width: 370px;
+  }
+
+  .f-row {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  footer .f-row .f-col {
+    width: 44%;
+  }
+
+  .contact_ .con_row {
+    flex-wrap: wrap;
+  }
+
+  .blog .blog_row {
+    display: grid;
+    grid-template-columns: auto;
+    gap: 30px;
+  }
+
+  .blog_views {
+    /* display: none; */
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #080808a8;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  .blog_view {
+    width: 95%;
+    padding: 20px;
+    margin: 0px auto;
+    background: #fff;
+    box-shadow: 0px 0px 12px 0px #f4f4f4;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .aboutRow {
+    grid-template-columns: auto;
+  }
+
+  .aboutRow .aboutCol img {
+    width: 55%;
+    margin: 0px auto;
+    display: block;
+  }
+
+  .innerRow {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .section_title p {
+    width: 85%;
+  }
+
+  .serviceCart {
+    width: 90%;
+  }
+
+  .form_row {
+    flex-direction: column;
+  }
+
+  .form_row .form_row_col {
+    width: 100%;
+  }
+
+}
+
+@media screen and (max-width: 580px) {
+  .section_title p {
+    width: 95%;
+  }
+
+  footer .f-row .f-col {
+    width: 100%;
+  }
+
+  .serviceCart {
+    width: 100%;
+  }
+
+  .faq .faq_qus {
+    width: 100%;
+  }
+
+  form {
+    width: 100% !important;
+  }
 }
