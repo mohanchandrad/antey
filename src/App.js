@@ -22,7 +22,6 @@ function App() {
 
 export default App;
 
-
-// git remote add origin https://github.com/mohanchandrad/antey.git
+// git remote add origin https://github.com/mohanchandrad/avast_anteyVairus.git
 //   git branch -M main
 //   git push -u origin main
