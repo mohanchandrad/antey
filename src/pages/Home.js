@@ -17,10 +17,11 @@ export const Home = () => {
 
     return (
         <>
+
+            <Header black='black' />
             <div className="bennar">
-                <Header black = '' />
                 <Bennar banner_content={banner_con} />
-                <div id="about">
+                <div id="about" style={{marginTop: '120px'}}>
                     <About />
                     <AboutContent />
                 </div>

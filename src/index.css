@@ -11,7 +11,7 @@
 }
 
 :root {
-  --nav-link-color: #ffff;
+  --nav-link-color: black;
   --banner_content_color: #ffff;
   --section_title_color: #2d2d2d;
   --inner-color: #FF5722;
@@ -45,7 +45,8 @@ header {
   width: 100%;
   position: fixed !important;
   top: 0;
-  background-color: #525252d6 !important;
+  background-color: #fff !important;
+  box-shadow: 0px 0px 5px 0px #a6a7a9bd;
   z-index: 9999;
 }
 
@@ -117,6 +118,22 @@ header>nav>.nav-link>ul>li>a:hover:after {
   z-index: 1;
 }
 
+/* transform-origin: left;
+transform: rotate(328deg); */
+
+/* transform-origin: left;
+    transform: rotate(38deg); */
+
+.span_ro_fs {
+  transform-origin: left;
+  transform: rotate(41deg);
+}
+
+.span_ro_ls {
+  transform-origin: left;
+  transform: rotate(319deg);
+}
+
 .bennar::before {
   content: '';
   width: 100%;
@@ -124,7 +141,7 @@ header>nav>.nav-link>ul>li>a:hover:after {
   position: absolute;
   top: 0;
   left: 0;
-  /* background-color: #0000004d; */
+  background-color: #0000004d;
   z-index: -1;
 }
 
@@ -205,7 +222,6 @@ header>nav>.nav-link>ul>li>a:hover:after {
   font-weight: 500;
   color: #414141;
   text-transform: capitalize;
-  /* font-family: 'Montserrat', sans-serif !important; */
 }
 
 .aboutRow {
@@ -725,6 +741,10 @@ form button:hover {
 }
 
 @media screen and (max-width: 900px) {
+  .banner_disc {
+    width: 70%;
+  }
+
   .service_row {
     flex-wrap: wrap;
   }
@@ -805,9 +825,58 @@ form button:hover {
     width: 100%;
   }
 
+  .nav-link {
+    right: -100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 9999;
+    height: 100vh;
+    background: #fff;
+    width: 70%;
+    transform: translate(-120%);
+    transition: 250ms ease-in-out;
+  }
+
+  header>nav>.nav-link>ul {
+    flex-direction: column;
+    align-items: self-start;
+    gap: 30px;
+    padding: 64px 27px;
+  }
+
+  header>nav>.toggle-btn {
+    display: block;
+    width: 34px;
+    height: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  header>nav>.toggle-btn span {
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: black;
+  }
+
 }
 
+@media screen and (min-width: 768px) {
+  .nav-link {
+    transform: translate(0%) !important;
+  }
+}
+
+
 @media screen and (max-width: 580px) {
+  .bennar_title h1 {
+    font-size: 47px;
+    font-weight: 600;
+    text-transform: capitalize;
+  }
+
   .section_title p {
     width: 95%;
   }
@@ -826,5 +895,19 @@ form button:hover {
 
   form {
     width: 100% !important;
+  }
+
+  .innerBenar {
+    background-position: right;
+    width: 100%;
+    height: 100vh;
+  }
+
+  .innerBenar h1 {
+    font-size: 56px;
+  }
+
+  .banner_disc {
+    width: 90%;
   }
 }
