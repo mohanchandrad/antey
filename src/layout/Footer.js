@@ -49,9 +49,9 @@ const Footer = () => {
                         <div className="f-col">
                             <h3>Contact</h3>
                             <ul className="f-add" style={{ gap: '20px', listStyle: 'none' }}>
-                                <li><a href=""> < FaPhoneAlt /> +91 0987654321</a></li>
-                                <li><a href=""> <IoMail /> demo@gmail.com</a></li>
-                                <li><a href=""> <FaLocationDot /> Lorem ipsum dolor sit amet, consectetur adipisicing elit</a></li>
+                                <li><a href="tel:9087654321"> < FaPhoneAlt /> +91 0987654321</a></li>
+                                <li><a href="mailto:demo@gmail.com"> <IoMail /> demo@gmail.com</a></li>
+                                <li><a href="#"> <FaLocationDot /> Lorem ipsum dolor sit amet, consectetur adipisicing elit</a></li>
                             </ul>
                         </div>
                     </div>

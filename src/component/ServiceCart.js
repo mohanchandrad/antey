@@ -46,10 +46,10 @@ export const ServiceCart = () => {
         <>
 
                 {
-                    service.map(item => {
+                    service.map((item, index) => {
                         return (
                             <>
-                                <div className="serviceCart">
+                                <div key={index} className="serviceCart">
                                     <div className="cart_image">
                                         <img src="https://img.freepik.com/premium-photo/cloud-data-storage-with-binary-code-cyber-security-concept-3d-rendering_34478-1219.jpg?size=626&ext=jpg&uid=P125233532&ga=GA1.1.1326273119.1694753008&semt=ais" />
                                     </div>

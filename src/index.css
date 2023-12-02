@@ -14,7 +14,7 @@
   --nav-link-color: black;
   --banner_content_color: #ffff;
   --section_title_color: #2d2d2d;
-  --inner-color: #FF5722;
+  --inner-color: #307bb6;
 }
 
 body {
@@ -118,12 +118,6 @@ header>nav>.nav-link>ul>li>a:hover:after {
   z-index: 1;
 }
 
-/* transform-origin: left;
-transform: rotate(328deg); */
-
-/* transform-origin: left;
-    transform: rotate(38deg); */
-
 .span_ro_fs {
   transform-origin: left;
   transform: rotate(41deg);
@@ -210,7 +204,7 @@ transform: rotate(328deg); */
   bottom: -11px;
   left: 50%;
   transform: translate(-50%);
-  background-color: #FF5722;
+  background-color: #307bb6;
 }
 
 .section_title p {
@@ -341,7 +335,7 @@ transform: rotate(328deg); */
 /* ---------------------------  footer ------------------------ */
 
 footer {
-  background-color: #041433e3;
+  background-color: #102c42e6;
   width: 100%;
   height: auto;
   padding: 30px 0px;
@@ -353,9 +347,10 @@ footer .f-row .f-col {
 }
 
 footer .f-row .f-col h2 {
-  color: #ff5722;
+  color: #e2e3e4;
   margin-bottom: 24px;
-  font-size: 31px;
+  font-size: 40px;
+  text-shadow: 1px 3px 0px #2196F3;
 }
 
 footer .f-row .f-col h3 {
@@ -372,13 +367,15 @@ footer .f-row .f-col svg {
   width: 30px;
   padding: 5px;
   border-radius: 5px;
-  fill: #ff5722;
+  fill: #ffff;
+  border: 1px solid #e2e3e4;
+  /* background-color: #fff; */
   transition: 250ms ease-in-out;
 }
 
 footer .f-row .f-col .social_link svg:hover {
-  /* fill: #fff; */
-  border: 1px solid #ff5722;
+  fill: #0d416a;
+  border: 1px solid #e2e3e4;
   background-color: #fff;
 }
 
@@ -639,6 +636,8 @@ table tbody tr .table_con {
 }
 
 /* contact page start ==============  */
+
+
 form {
   margin: 50px auto;
 }
@@ -650,11 +649,14 @@ form h3 {
   font-size: 30px;
   border-bottom: 1px solid #d5d5d5;
   padding-bottom: 18px;
-  text-shadow: 0px 2px 0px #ff57229c;
+  text-shadow: 2px 3px 2px #307bb6;
 }
 
 .contact_ .con_row {
   margin: 30px auto;
+  justify-content: center;
+  width: 59%;
+  flex-wrap: wrap;
 }
 
 .contact_ .con_row .con_col {
@@ -681,7 +683,7 @@ input {
   padding: 0px 10px;
   border-radius: 5px;
   border: 1px solid lightgrey;
-  box-shadow: 0px 0px 3px 0px #afafaf;
+  box-shadow: 0px 0px 3px 0px #307bb6;
   margin-bottom: 30px;
 }
 
@@ -691,7 +693,7 @@ textarea {
   padding: 10px 10px;
   border-radius: 5px;
   border: 1px solid lightgrey;
-  box-shadow: 0px 0px 3px 0px #afafaf;
+  box-shadow: 0px 0px 3px 0px #307bb6;
   margin-bottom: 30px;
 }
 
@@ -741,6 +743,9 @@ form button:hover {
 }
 
 @media screen and (max-width: 900px) {
+  .innerBenar {
+    background-position: right;
+  }
   .banner_disc {
     width: 70%;
   }
@@ -773,15 +778,15 @@ form button:hover {
   }
 
   .blog_views {
-    /* display: none; */
+    display: none;
     position: fixed;
     top: 0;
     left: 0;
     background: #080808a8;
     min-height: 100vh;
     width: 100%;
-    display: flex;
     align-items: center;
+    z-index: 9999;
   }
 
   .blog_view {
@@ -791,6 +796,28 @@ form button:hover {
     background: #fff;
     box-shadow: 0px 0px 12px 0px #f4f4f4;
   }
+
+  .close_modale {
+    position: absolute;
+    top: 9px;
+    right: 35px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #FF9800;
+    display: flex;
+    align-items: center;
+  }
+
+  .close_modale svg {
+    width: 30px;
+    height: 30px;
+    fill: #fff;
+  }
+
+  .blog_view .blog_view_col img {
+    height: auto;
+  }
+
 }
 
 @media screen and (max-width: 768px) {
@@ -833,7 +860,8 @@ form button:hover {
     z-index: 9999;
     height: 100vh;
     background: #fff;
-    width: 70%;
+    width: 50%;
+    padding: 20px;
     transform: translate(-120%);
     transition: 250ms ease-in-out;
   }
@@ -842,7 +870,20 @@ form button:hover {
     flex-direction: column;
     align-items: self-start;
     gap: 30px;
-    padding: 64px 27px;
+    padding: 30px 0px;
+  }
+
+  header>nav>.nav-link>ul>li {
+    border-bottom: 1px solid #b7b7b7;
+    width: 100%;
+    padding-bottom: 12px;
+}
+  
+  header>nav>.nav-link>.mid-logo {
+    display: block;
+    font-size: 31px;
+    font-weight: 600;
+    color: #307bb8;
   }
 
   header>nav>.toggle-btn {
@@ -871,6 +912,10 @@ form button:hover {
 
 
 @media screen and (max-width: 580px) {
+  .nav-link {
+    width: 74%;
+  }
+
   .bennar_title h1 {
     font-size: 47px;
     font-weight: 600;
